@@ -1,5 +1,2 @@
-# yashendra-gupta.github.io
-Portfolio of Yashendra Gupta
-
-
-Will upload updated portfolio soon!!
+# Portfolio of Yashendra Gupta
+Head to  [portfolio](https://yashendra-gupta.github.io/)
