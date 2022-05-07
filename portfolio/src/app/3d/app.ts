@@ -214,6 +214,22 @@ export class App {
             }
         }, this._camera, this._AdvancedDynamicTexture);
 
+        Builder.buildMesh({
+            name: 'Work Experience',
+            meshFileUri: '/assets/3d/meshes/',
+            meshfileName: 'company-01.gltf',
+            referenceMeshToPosition: 0,
+            position: new Vector3(-65, 0, -400),
+            shadowGenerator: shadowGenerator,
+            enableCollision: true,
+            showButton: true,
+            attachButtonToMesh: 1,
+            meshMetaData: {
+                cameraTarget: new Vector3(-65, 0, -400),
+                cameraPosition: new Vector3(-25, 0, -350)
+            }
+        }, this._camera, this._AdvancedDynamicTexture);
+
         new Sound("sound-birds", `${ENV.assetsUrl}/assets/3d/audio/sound-birds.m4a`, this._scene, null, {
             loop: true,
             autoplay: true
