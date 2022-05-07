@@ -18,7 +18,7 @@ import "@babylonjs/core/Animations/animatable";
 import { AxesViewer } from "@babylonjs/core/Debug/axesViewer";
 
 import { environment as ENV } from "../../environments/environment";
-import { DirectionalLight, GlowLayer, ShadowGenerator } from "@babylonjs/core";
+import { DirectionalLight, GlowLayer, ShadowGenerator, Sound } from "@babylonjs/core";
 import { Generator } from "./utils/generators/generator";
 import { Builder } from "./utils/builders/builder";
 
@@ -194,6 +194,11 @@ export class App {
             position: new Vector3(15, 0, 20),
             shadowGenerator: shadowGenerator,
             enableCollision: true
+        });
+
+        new Sound("sound-birds", `${ENV.assetsUrl}/assets/3d/audio/sound-birds.m4a`, this._scene, null, {
+            loop: true,
+            autoplay: true
         });
     }
 
