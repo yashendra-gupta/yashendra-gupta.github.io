@@ -196,6 +196,24 @@ export class App {
             enableCollision: true
         });
 
+        Builder.buildMesh({
+            name: 'Education',
+            meshFileUri: '/assets/3d/meshes/',
+            meshfileName: 'school-01.gltf',
+            referenceMeshToPosition: 0,
+            position: new Vector3(145, 0, -200),
+            referenceMeshToRotate: 0,
+            rotation: new Vector3(0, 10, 0),
+            shadowGenerator: shadowGenerator,
+            enableCollision: true,
+            showButton: true,
+            attachButtonToMesh: 1,
+            meshMetaData: {
+                cameraTarget: new Vector3(145, 0, -200),
+                cameraPosition: new Vector3(105, 0, -220)
+            }
+        }, this._camera, this._AdvancedDynamicTexture);
+
         new Sound("sound-birds", `${ENV.assetsUrl}/assets/3d/audio/sound-birds.m4a`, this._scene, null, {
             loop: true,
             autoplay: true
