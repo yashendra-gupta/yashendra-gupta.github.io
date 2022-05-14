@@ -210,18 +210,19 @@ export class Generator {
 
     public static generateForest(forestOptions: ForestOptions, scene: Scene) {
         const position = !Util.isNullOrUndefined(forestOptions.position) ? forestOptions.position : Vector3.Zero();
-        const renderingGroupId = !Util.isNullOrUndefined(forestOptions.renderingGroupId) ? forestOptions.renderingGroupId: 2;
+        const renderingGroupId = !Util.isNullOrUndefined(forestOptions.renderingGroupId) ? forestOptions.renderingGroupId : 2;
 
-        SceneLoader.LoadAssetContainer(`${ENV.assetsUrl}/assets/3d/meshes/`, "tree.gltf", scene, (result) => {
+        SceneLoader.LoadAssetContainer(`${ENV.assetsUrl}/assets/3d/meshes/`, "tree-01.gltf", scene, (result) => {
             result.meshes.forEach((mesh: AbstractMesh) => mesh.renderingGroupId = renderingGroupId);
             result.meshes[0].position = position;
             result.addAllToScene();
+            result.meshes[0].scaling = new Vector3(3, 3, 3);
 
             const range = 10000;
             for (let i = 1; i <= 300; i++) {
                 let x = (range / 2 - Math.random() * (range + (new Date().getTime() % 100))) / 2;
                 let z = (range / 2 - Math.random() * (range + (new Date().getTime() % 1000))) / 2;
-                let insideXBoundary = x > -300 && x < 300;
+                let insideXBoundary = x > -250 && x < 250;
                 let insideZBoundary = z > -300 && z < 60;
 
                 if (insideXBoundary || insideZBoundary) {
