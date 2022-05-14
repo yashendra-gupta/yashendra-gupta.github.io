@@ -1,0 +1,66 @@
+{
+    "renderingGroupId": 2,
+    "name": "snow",
+    "position": {
+        "x": 0,
+        "y": 150,
+        "z": -150
+    },
+    "capacity": 20000,
+    "emitterType": 0,
+    "emitterOptions": {
+        "direction1": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "direction2": {
+            "x": 500,
+            "y": -700,
+            "z": 0
+        },
+        "minEmitBox": {
+            "x": 550,
+            "y": 0,
+            "z": 550
+        },
+        "maxEmitBox": {
+            "x": -550,
+            "y": 0,
+            "z": -550
+        }
+    },
+    "particleTextureUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets/assets/3d/particles/textures/smoke.png",
+    "blendMode": 0,
+    "minLifeTime": 0.3,
+    "maxLifeTime": 2.5,
+    "emitRate": 10000,
+    "color1": {
+        "r": 0.7,
+        "g": 0.8,
+        "b": 0.9,
+        "a": 0.7
+    },
+    "color2": {
+        "r": 0.7,
+        "g": 0.8,
+        "b": 0.7,
+        "a": 1
+    },
+    "colorDead": {
+        "r": 0.7,
+        "g": 0.8,
+        "b": 0.9,
+        "a": 0
+    },
+    "minSize": 0.7,
+    "maxSize": 0.9,
+    "gravity": {
+        "x": 0,
+        "y": -9.81,
+        "z": 0
+    },
+    "minAngularSpeed": 0,
+    "maxAngularSpeed": 3.14,
+    "isLocal": true
+}

@@ -10,6 +10,9 @@ import { Util } from "../util";
 
 import { environment as ENV } from "./../../../../environments/environment";
 
+ /**
+  * @deprecated 
+  */
 class FireworkOptions {
     position?: Vector3;
     rotationZ?: number;
@@ -22,6 +25,9 @@ class FireworkOptions {
     }
 }
 
+ /**
+  * @deprecated 
+  */
 class FireOptions {
     position?: Vector3;
     renderingGroupId?: number;
@@ -32,6 +38,9 @@ class FireOptions {
     }
 }
 
+ /**
+  * @deprecated 
+  */
 class SmokeOptions {
     position?: Vector3;
     renderingGroupId?: number;
@@ -53,6 +62,9 @@ class ForestOptions {
 }
 
 export class Generator {
+    /**
+     * @deprecated Use generateParticleSystem() instead
+     */
     public static generateFirework(fireworkOptions: FireworkOptions, scene: Scene) {
         const position = !Util.isNullOrUndefined(fireworkOptions.position) ? fireworkOptions.position : Vector3.Zero();
         const renderingGroupId = !Util.isNullOrUndefined(fireworkOptions.renderingGroupId) ? fireworkOptions.renderingGroupId: 2;
@@ -104,6 +116,9 @@ export class Generator {
         particleSystem.start();
     }
 
+    /**
+     * @deprecated Use generateParticleSystem() instead
+     */
     public static generateFire(fireOptions: FireOptions, scene: Scene) {
         const position = !Util.isNullOrUndefined(fireOptions.position) ? fireOptions.position : Vector3.Zero();
         const renderingGroupId = !Util.isNullOrUndefined(fireOptions.renderingGroupId) ? fireOptions.renderingGroupId: 2;
@@ -143,6 +158,9 @@ export class Generator {
         particleSystem.start();
     }
 
+    /**
+     * @deprecated Use generateParticleSystem() instead
+     */
     public static generateSmoke(smokeOptions: SmokeOptions, scene: Scene) {
         const position = !Util.isNullOrUndefined(smokeOptions.position) ? smokeOptions.position : Vector3.Zero();
         const renderingGroupId = !Util.isNullOrUndefined(smokeOptions.renderingGroupId) ? smokeOptions.renderingGroupId: 2;

@@ -1,0 +1,59 @@
+{
+    "renderingGroupId": 2,
+    "name": "autumnG",
+    "position": {
+        "x": 0,
+        "y": 0,
+        "z": -150
+    },
+    "capacity": 20000,
+    "emitterType": 0,
+    "emitterOptions": {
+        "direction1": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "direction2": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "minEmitBox": {
+            "x": 550,
+            "y": 0,
+            "z": 550
+        },
+        "maxEmitBox": {
+            "x": -550,
+            "y": 0,
+            "z": -550
+        }
+    },
+    "particleTextureUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets/assets/3d/particles/textures/smoke.png",
+    "blendMode": 0,
+    "minLifeTime": 0.3,
+    "maxLifeTime": 5.5,
+    "emitRate": 10000,
+    "color1": {
+        "r": 0.593,
+        "g": 0.281,
+        "b": 0.01,
+        "a": 1.0
+    },
+    "color2": {
+        "r": 0.593,
+        "g": 0.281,
+        "b": 0.167,
+        "a": 1.0
+    },
+    "colorDead": {
+        "r": 0.593,
+        "g": 0.281,
+        "b": 0.167,
+        "a": 1
+    },
+    "minSize": 0.2,
+    "maxSize": 0.3,
+    "isLocal": true
+}

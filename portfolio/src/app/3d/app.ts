@@ -22,6 +22,15 @@ import { DirectionalLight, GlowLayer, ShadowGenerator, Sound } from "@babylonjs/
 import { Generator } from "./utils/generators/generator";
 import { Builder } from "./utils/builders/builder";
 
+import rain from "./utils/generators/configuration/particle-system/rain.json";
+import snow from "./utils/generators/configuration/particle-system/snow.json";
+import hailstorm from "./utils/generators/configuration/particle-system/hailstorm.json";
+import hailstormG from "./utils/generators/configuration/particle-system/hailstormG.json";
+import autumn from "./utils/generators/configuration/particle-system/autumn.json";
+import autumnG from "./utils/generators/configuration/particle-system/autumnG.json";
+import lightning from "./utils/generators/configuration/particle-system/lightning.json";
+import { ParticleGenerator } from "./utils/generators/particles.generator";
+
 export class App {
     private _canvas: HTMLCanvasElement;
     private _engine: Engine;
@@ -234,6 +243,14 @@ export class App {
             loop: true,
             autoplay: true
         });
+
+        ParticleGenerator.generateParticleSystem(rain, this._scene).start();
+        ParticleGenerator.generateParticleSystem(snow, this._scene).start();
+        ParticleGenerator.generateParticleSystem(hailstorm, this._scene).start();
+        ParticleGenerator.generateParticleSystem(hailstormG, this._scene).start();
+        ParticleGenerator.generateParticleSystem(autumn, this._scene).start();
+        ParticleGenerator.generateParticleSystem(autumnG, this._scene).start();
+        ParticleGenerator.generateParticleSystem(lightning, this._scene).start();
     }
 
     private doRender(): void {
