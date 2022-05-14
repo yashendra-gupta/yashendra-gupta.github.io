@@ -246,13 +246,42 @@ export class App {
             autoplay: true
         });
 
-        ParticleGenerator.generateParticleSystem(rain, this._scene).start();
-        ParticleGenerator.generateParticleSystem(snow, this._scene).start();
-        ParticleGenerator.generateParticleSystem(hailstorm, this._scene).start();
-        ParticleGenerator.generateParticleSystem(hailstormG, this._scene).start();
         ParticleGenerator.generateParticleSystem(autumn, this._scene).start();
         ParticleGenerator.generateParticleSystem(autumnG, this._scene).start();
-        ParticleGenerator.generateParticleSystem(lightning, this._scene).start();
+
+        const generateRain = ParticleGenerator.generateParticleSystem(rain, this._scene);
+        const generateLightning = ParticleGenerator.generateParticleSystem(lightning, this._scene);
+        const generateHailStorm = ParticleGenerator.generateParticleSystem(hailstorm, this._scene);
+        const generateHailStormG = ParticleGenerator.generateParticleSystem(hailstormG, this._scene);
+        const generateSnow = ParticleGenerator.generateParticleSystem(snow, this._scene);
+
+        let count = 0
+        setInterval(() => {
+            console.log(count)
+            if (count == 0) {
+                skyboxMaterial.reflectionTexture = new CubeTexture(`${ENV.assetsUrl}/assets/3d/envs/skyboxes/cloudy/`, this._scene);
+                skyboxMaterial.reflectionTexture.coordinatesMode = Texture.SKYBOX_MODE;
+                generateRain.start();
+                generateLightning.start();
+                generateHailStorm.start();
+                generateHailStormG.start();
+                generateSnow.stop();
+                this._light.intensity = 0.3;
+                this._scene.fogColor = new Color3(0.5, 0.5, 0.5);
+                ++count;
+            } else {
+                skyboxMaterial.reflectionTexture = new CubeTexture(`${ENV.assetsUrl}/assets/3d/envs/skyboxes/cloudy/`, this._scene);
+                skyboxMaterial.reflectionTexture.coordinatesMode = Texture.SKYBOX_MODE;
+                generateRain.stop();
+                generateLightning.stop();
+                generateHailStorm.stop();
+                generateHailStormG.stop();
+                generateSnow.start();
+                this._light.intensity = 0.3;
+                this._scene.fogColor = new Color3(0.7, 0.7, 0.7);
+                --count;
+            }
+        }, 10000)
     }
 
     private doRender(): void {
