@@ -62,7 +62,7 @@ export class App {
         this._scene.clearColor = new Color4(0.92, 0.96, 0.97);
 
         this._scene.fogMode = Scene.FOGMODE_LINEAR;
-        this._scene.fogStart = 300.0;
+        this._scene.fogStart = 200.0;
         this._scene.fogEnd = 1000.0;
         this._scene.fogColor = new Color3(0, 0.3, 0);
 
@@ -76,6 +76,8 @@ export class App {
         this._scene.gravity = new Vector3(0, -0.4, 0);
         this._scene.collisionsEnabled = true;
         this._camera.ellipsoid = new Vector3(1, 1, 0.5);
+
+        this._light.intensity = 0.7;
 
         const directionalLight = new DirectionalLight("directionalLight", new Vector3(-1, -2, -1), this._scene);
         directionalLight.position = new Vector3(-20, 35, 20);
@@ -93,9 +95,9 @@ export class App {
         terrainMaterial.diffuseTexture1 = new Texture(`${ENV.assetsUrl}/assets/3d/envs/terrains/ground-grass/ground-grass.png`, this._scene);
         terrainMaterial.diffuseTexture2 = new Texture(`${ENV.assetsUrl}/assets/3d/envs/terrains/ground-grass/ground-grass.png`, this._scene);
         terrainMaterial.diffuseTexture3 = new Texture(`${ENV.assetsUrl}/assets/3d/envs/terrains/ground-grass/ground-grass.png`, this._scene);
-        terrainMaterial.diffuseTexture1.uScale = terrainMaterial.diffuseTexture1.vScale = 500;
-        terrainMaterial.diffuseTexture2.uScale = terrainMaterial.diffuseTexture2.vScale = 500;
-        terrainMaterial.diffuseTexture3.uScale = terrainMaterial.diffuseTexture3.vScale = 500;
+        terrainMaterial.diffuseTexture1.uScale = terrainMaterial.diffuseTexture1.vScale = 1500;
+        terrainMaterial.diffuseTexture2.uScale = terrainMaterial.diffuseTexture2.vScale = 1500;
+        terrainMaterial.diffuseTexture3.uScale = terrainMaterial.diffuseTexture3.vScale = 1500;
 
         ground.material = terrainMaterial;
 
