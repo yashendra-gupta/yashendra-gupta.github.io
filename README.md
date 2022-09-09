@@ -1,4 +1,4 @@
-![pages-build-deployment](https://github.com/yashendra-gupta/yashendra-gupta.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)
+[![pages-build-deployment](https://github.com/yashendra-gupta/yashendra-gupta.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/yashendra-gupta/yashendra-gupta.github.io/actions/workflows/pages/pages-build-deployment)
 
 # Portfolio of Yashendra Gupta
 Head to  [portfolio](https://yashendra-gupta.github.io/)
