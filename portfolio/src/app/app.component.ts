@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { App } from './3d/app';
+
+import '@yashendra-gupta/yg-vishva/yg-vishva.js';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,4 @@ import { App } from './3d/app';
 })
 export class AppComponent {
   title = 'Yashendra Gupta Portfolio';
-  
-  ngAfterViewInit(): void {
-    const app3d = new App('renderCanvas');
-    app3d.run();
-  }
 }

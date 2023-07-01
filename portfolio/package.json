@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "ng": "ng",
     "ng:update-latest": "ng update @angular/cli",
@@ -22,10 +22,7 @@
     "@angular/platform-browser": "^16.1.2",
     "@angular/platform-browser-dynamic": "^16.1.2",
     "@angular/router": "^16.1.2",
-    "@babylonjs/core": "5.34.0",
-    "@babylonjs/gui": "5.34.0",
-    "@babylonjs/loaders": "5.34.0",
-    "@babylonjs/materials": "5.34.0",
+    "@yashendra-gupta/yg-vishva": "0.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.1"

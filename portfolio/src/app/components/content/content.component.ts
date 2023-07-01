@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Event, EventBus, Message } from '../../3d/events/external/event-bus';
+import { Event, EventBus, Message } from '@yashendra-gupta/yg-vishva';
 
 @Component({
     selector: 'yg-content',
