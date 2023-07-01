@@ -1,9 +1,11 @@
 {
   "name": "portfolio",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "ng": "ng",
+    "ng:update-latest": "ng update @angular/cli",
     "start": "ng serve",
+    "start:forHost": "ng serve --host 0.0.0.0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -12,26 +14,26 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^15.0.1",
-    "@angular/common": "^15.0.1",
-    "@angular/compiler": "^15.0.1",
-    "@angular/core": "^15.0.1",
-    "@angular/forms": "^15.0.1",
-    "@angular/platform-browser": "^15.0.1",
-    "@angular/platform-browser-dynamic": "^15.0.1",
-    "@angular/router": "^15.0.1",
+    "@angular/animations": "^16.1.2",
+    "@angular/common": "^16.1.2",
+    "@angular/compiler": "^16.1.2",
+    "@angular/core": "^16.1.2",
+    "@angular/forms": "^16.1.2",
+    "@angular/platform-browser": "^16.1.2",
+    "@angular/platform-browser-dynamic": "^16.1.2",
+    "@angular/router": "^16.1.2",
     "@babylonjs/core": "5.34.0",
     "@babylonjs/gui": "5.34.0",
     "@babylonjs/loaders": "5.34.0",
     "@babylonjs/materials": "5.34.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.13.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.0.1",
-    "@angular/cli": "^15.0.1",
-    "@angular/compiler-cli": "^15.0.1",
+    "@angular-devkit/build-angular": "^16.1.1",
+    "@angular/cli": "^16.1.1",
+    "@angular/compiler-cli": "^16.1.2",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "angular-cli-ghpages": "^1.0.0",
@@ -41,6 +43,6 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.8.4"
+    "typescript": "~5.1.5"
   }
 }
