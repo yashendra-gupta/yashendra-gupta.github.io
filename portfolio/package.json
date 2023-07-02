@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "scripts": {
     "ng": "ng",
     "ng:update-latest": "ng update @angular/cli",
@@ -22,7 +22,7 @@
     "@angular/platform-browser": "^16.1.2",
     "@angular/platform-browser-dynamic": "^16.1.2",
     "@angular/router": "^16.1.2",
-    "@yashendra-gupta/yg-vishva": "file:../../yg-vishva/yashendra-gupta-yg-vishva-0.0.3.tgz",
+    "@yashendra-gupta/yg-vishva": "file:../../yg-vishva/yashendra-gupta-yg-vishva-0.0.4.tgz",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.1"
