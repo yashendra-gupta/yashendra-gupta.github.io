@@ -15,7 +15,7 @@
         },
         "cameraTarget": {
             "x": 0,
-            "y": 0,
+            "y": 2,
             "z": 9
         },
         "cameraSpeed": 1,
@@ -70,6 +70,14 @@
             "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
             "skyboxUri": "/assets/3d/envs/skyboxes/sunrise/",
             "renderingGroupId": 0
+        },
+        "fence": {
+            "xl": -300,
+            "xu": 300,
+            "yl": 2,
+            "yu": 10,
+            "zl": -550,
+            "zu": 60
         }
     },
     "forest": [
