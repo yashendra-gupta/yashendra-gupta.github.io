@@ -1,0 +1,296 @@
+{
+    "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+    "scene": {
+        "sceneClearColor": {
+            "r": 0.92,
+            "g": 0.96,
+            "b": 0.97
+        },
+        "fogStart": 200,
+        "fogEnd": 1000,
+        "cameraTarget": {
+            "x": 0,
+            "y": 0,
+            "z": 9
+        },
+        "cameraSpeed": 1,
+        "directionalLight": {
+            "position": {
+                "x": -20,
+                "y": 35,
+                "z": 20
+            },
+            "direction": {
+                "x": -1,
+                "y": -2,
+                "z": -1
+            },
+            "intensity": 0.1
+        },
+        "ground":{
+            "width": 10000,
+            "height": 10000,
+            "subdivisions": 1,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "renderingGroupId": 1,
+            "material": {
+                "specularColor": {
+                    "r": 0.5,
+                    "g": 0.5,
+                    "b": 0.5
+                },
+                "specularPower": 64,
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "mixTextureUri": "/assets/3d/envs/terrains/ground-grass/stencil.png",
+                "diffuseTexture1Uri": "/assets/3d/envs/terrains/ground-grass/ground-grass.png",
+                "diffuseTexture2Uri": "/assets/3d/envs/terrains/ground-grass/ground-grass.png",
+                "diffuseTexture3Uri": "/assets/3d/envs/terrains/ground-grass/ground-grass.png",
+                "uvDiffuseTexture1Scale": 1500,
+                "uvDiffuseTexture2Scale": 1500,
+                "uvDiffuseTexture3Scale": 1500
+            }
+        },
+        "skybox": {
+            "size": 1,
+            "position": {
+                "x": 0,
+                "y": 0.49,
+                "z": 0
+            },
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "skyboxUri": "/assets/3d/envs/skyboxes/sunrise/",
+            "renderingGroupId": 0
+        }
+    },
+    "forest": [
+        {
+            "treeCount": 300,
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/meshes/",
+            "treeMeshFileName": "tree-01.gltf",
+            "start": 650,
+            "end": 650,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 650
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Portfolio",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/meshes/",
+            "meshfileName": "stage.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "enableShadow": true,
+            "enableCollision": true,
+            "showButton": true,
+            "attachButtonToMesh": 0,
+            "meshMetaData": {
+                "cameraTarget": {
+                    "x": -1,
+                    "y": 0,
+                    "z": 0
+                },
+                "cameraPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 40
+                }
+            }
+        },
+        {
+            "name": "welcome-to-yashendra-gupta-portfolio",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/texts/",
+            "meshfileName": "welcome-to-yashendra-gupta-portfolio.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": 0,
+                "y": 6.5,
+                "z": 1
+            },
+            "referenceMeshToScale": 0,
+            "scaling": {
+                "x": 1.5,
+                "y": 1.5,
+                "z": 1.5
+            }
+        },
+        {
+            "name": "Man",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/characters/",
+            "meshfileName": "man.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": 0,
+                "y": 1.56,
+                "z": 7.5
+            }
+        },
+        {
+            "name": "Skills",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/meshes/",
+            "meshfileName": "forge-building.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": -145,
+                "y": 0,
+                "z": -200
+            },
+            "referenceMeshToRotate": 0,
+            "rotation": {
+                "x": 0,
+                "y": 10,
+                "z": 0
+            },
+            "enableShadow": true,
+            "enableCollision": true,
+            "showButton": true,
+            "attachButtonToMesh": 1,
+            "meshMetaData": {
+                "cameraTarget": {
+                    "x": -145,
+                    "y": 0,
+                    "z": -200
+                },
+                "cameraPosition": {
+                    "x": -105,
+                    "y": 0,
+                    "z": -180
+                }
+            }
+        },
+        {
+            "name": "Find me here",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/meshes/",
+            "meshfileName": "sign-board-find-me-here.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": -15,
+                "y": 0,
+                "z": 20
+            },
+            "enableShadow": true,
+            "enableCollision": true
+        },
+        {
+            "name": "linkedin",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/texts/",
+            "meshfileName": "linkedin.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": -16,
+                "y": 0,
+                "z": 22
+            },
+            "enableShadow": true,
+            "enableCollision": true
+        },
+        {
+            "name": "github",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/texts/",
+            "meshfileName": "github.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": -15.5,
+                "y": 0,
+                "z": 21
+            },
+            "enableShadow": true,
+            "enableCollision": true
+        },
+        {
+            "name": "head-to-source-code",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/texts/",
+            "meshfileName": "head-to-source-code.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": 15,
+                "y": 0,
+                "z": 20
+            },
+            "enableShadow": true,
+            "enableCollision": true
+        },
+        {
+            "name": "Education",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/meshes/",
+            "meshfileName": "school-01.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": 145,
+                "y": -1,
+                "z": -200
+            },
+            "referenceMeshToRotate": 0,
+            "rotation": {
+                "x": 0,
+                "y": 10,
+                "z": 0
+            },
+            "enableShadow": true,
+            "enableCollision": true,
+            "showButton": true,
+            "attachButtonToMesh": 1,
+            "meshMetaData": {
+                "cameraTarget": {
+                    "x": 145,
+                    "y": 0,
+                    "z": -200
+                },
+                "cameraPosition": {
+                    "x": 105,
+                    "y": 0,
+                    "z": -220
+                }
+            }
+        },
+        {
+            "name": "Work Experience",
+            "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+            "meshFileUri": "/assets/3d/meshes/",
+            "meshfileName": "company-01.gltf",
+            "referenceMeshToPosition": 0,
+            "position": {
+                "x": -65,
+                "y": 0,
+                "z": -400
+            },
+            "enableShadow": true,
+            "enableCollision": true,
+            "showButton": true,
+            "attachButtonToMesh": 1,
+            "meshMetaData": {
+                "cameraTarget": {
+                    "x": -65,
+                    "y": 0,
+                    "z": -400
+                },
+                "cameraPosition": {
+                    "x": -25,
+                    "y": 0,
+                    "z": -350
+                }
+            }
+        }
+    ]
+}
