@@ -8,6 +8,11 @@
         },
         "fogStart": 200,
         "fogEnd": 1000,
+        "cameraPosition": {
+            "x": 0,
+            "y": 0,
+            "z": 52
+        },
         "cameraTarget": {
             "x": 0,
             "y": 0,
@@ -61,6 +66,7 @@
                 "y": 0.49,
                 "z": 0
             },
+            "infiniteDistance": true,
             "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
             "skyboxUri": "/assets/3d/envs/skyboxes/sunrise/",
             "renderingGroupId": 0
