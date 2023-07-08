@@ -32,7 +32,7 @@
             },
             "intensity": 0.1
         },
-        "ground":{
+        "ground": {
             "width": 10000,
             "height": 10000,
             "subdivisions": 1,
@@ -298,5 +298,95 @@
                 }
             }
         }
-    ]
+    ],
+    "addOn": {
+        "fires": [
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": 1.7,
+                    "y": 1.56,
+                    "z": 8.1
+                }
+            },
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": -1.7,
+                    "y": 1.56,
+                    "z": 8.1
+                }
+            }
+        ],
+        "fireworks": [
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": 8,
+                    "y": 7,
+                    "z": 0
+                },
+                "rotationZ": -0.5
+            },
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": 5,
+                    "y": 9.5,
+                    "z": 0
+                }
+            },
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": 0,
+                    "y": 8.5,
+                    "z": 0
+                }
+            },
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": -5,
+                    "y": 9.5,
+                    "z": 0
+                }
+            },
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": -8,
+                    "y": 7,
+                    "z": 0
+                },
+                "rotationZ": 0.5
+            }
+        ],
+        "smokes": [
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": -126,
+                    "y": 20,
+                    "z": -209
+                }
+            },
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": -131,
+                    "y": 25,
+                    "z": -209
+                }
+            },
+            {
+                "assetsBaseUrl": "https://raw.githubusercontent.com/yashendra-gupta/yashendra-gupta.github.io/assets",
+                "position": {
+                    "x": -126,
+                    "y": 18,
+                    "z": -203
+                }
+            }
+        ]
+    }
 }
