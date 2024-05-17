@@ -1,9 +1,10 @@
 {
   "name": "portfolio",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "scripts": {
     "ng": "ng",
     "ng:update-latest": "ng update @angular/cli",
+    "clean": "rm package-lock.json && rm -rf node_modules && rm -rf .angular",
     "start": "ng serve",
     "start:forHost": "ng serve --host 0.0.0.0",
     "build": "ng build",
@@ -33,7 +34,7 @@
     "@angular/compiler-cli": "^17.3.8",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
-    "angular-cli-ghpages": "^1.0.0",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
