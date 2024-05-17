@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "scripts": {
     "ng": "ng",
     "ng:update-latest": "ng update @angular/cli",
-    "clean": "rm package-lock.json && rm -rf node_modules && rm -rf .angular",
+    "clean": "rm -rf dist && rm package-lock.json && rm -rf node_modules && rm -rf .angular",
     "start": "ng serve",
     "start:forHost": "ng serve --host 0.0.0.0",
     "build": "ng build",
@@ -23,7 +23,7 @@
     "@angular/platform-browser": "^17.3.8",
     "@angular/platform-browser-dynamic": "^17.3.8",
     "@angular/router": "^17.3.8",
-    "@yashendra-gupta/yg-vishva": "file:../../yg-vishva/yashendra-gupta-yg-vishva-0.0.11.tgz",
+    "@yashendra-gupta/yg-vishva": "file:../../yg-vishva/yashendra-gupta-yg-vishva-0.0.12.tgz",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.5"
