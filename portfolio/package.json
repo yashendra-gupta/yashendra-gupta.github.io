@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "scripts": {
     "ng": "ng",
     "ng:update-latest": "ng update @angular/cli",
@@ -29,8 +29,8 @@
     "zone.js": "~0.14.5"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.0.1",
-    "@angular/cli": "^18.0.1",
+    "@angular-devkit/build-angular": "^18.2.4",
+    "@angular/cli": "^18.2.4",
     "@angular/compiler-cli": "^18.0.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
