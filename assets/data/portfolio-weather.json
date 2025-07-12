@@ -1,5 +1,3 @@
 {
-  "loop": true,
-  "loopInterval": 5000,
-  "weatherType": "SHINE"
+  "weatherType": "SHINE_WINDY"
 }
